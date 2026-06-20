@@ -1,157 +1,215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shubham | Dev Space</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shubham | Dev Space</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Shubham Teredesai</h2>
+        <p>Computer engineering undergrad '29</p>
+      </div>
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <a class="nav-link active" data-tab="home">~/home</a>
+        <a class="nav-link" data-tab="projects">~/projects</a>
+        <a class="nav-link" data-tab="writing">~/writing</a>
+        <a class="nav-link" data-tab="media-log">~/media-log</a>
+        <a class="nav-link" data-tab="random-stuff">~/random-stuff</a>
+      </nav>
 
-    <div class="sidebar-header">
-      <h2>Shubham Teredesai</h2>
-      <p>Computer engineering undergrad '29</p>
-    </div>
+      <div class="sidebar-divider"></div>
 
-    <nav class="sidebar-nav">
-      <a class="nav-link active" data-tab="home">~/home</a>
-      <a class="nav-link" data-tab="projects">~/projects</a>
-      <a class="nav-link" data-tab="writing">~/writing</a>
-      <a class="nav-link" data-tab="media-log">~/media-log</a>
-      <a class="nav-link" data-tab="random-stuff">~/random-stuff</a>
-    </nav>
+      <div class="sidebar-links">
+        <a href="https://github.com/iamclickify" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+        <a href="https://www.linkedin.com/in/shubham-teredesai/" target="_blank" rel="noopener"
+          >LinkedIn</a
+        >
+        <a href="#">Resume</a>
+      </div>
 
-    <div class="sidebar-divider"></div>
+      <div class="sidebar-gif">
+        <img src="lonely-lonely-lonely.gif" alt="Lonely sticker" />
+      </div>
+    </aside>
 
-    <div class="sidebar-links">
-      <a href="https://github.com/iamclickify" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="#">Resume</a>
-    </div>
+    <!-- MAIN -->
+    <main class="main">
+      <div class="home-grid">
+        <!-- CENTER COLUMN (WIDE) -->
+        <div class="center-column">
+          <!-- TERMINAL -->
+          <section class="terminal-module">
+            <div class="terminal-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">guest@shubham.dev:~$ session</span>
+            </div>
 
-    <div class="sidebar-gif">
-      <img src="lonely-lonely-lonely.gif" alt="Lonely sticker">
-    </div>
+            <div class="terminal" id="terminal-body">
+              <div id="terminal-output">
+                <div class="line-msg">Welcome to my dev space!</div>
+                <div class="line">
+                  <span class="prompt">guest@shubham.dev:~$</span>
+                  <span class="cmd">neofetch</span>
+                </div>
 
-    
-
-  </aside>
-
-  <!-- MAIN -->
-  <main class="main">
-
-    <div class="home-grid">
-
-      <!-- CENTER COLUMN (WIDE) -->
-      <div class="center-column">
-
-        <!-- TERMINAL -->
-        <section class="terminal-module">
-
-          <div class="terminal-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-            <span class="terminal-title">guest@shubham.dev:~$ session</span>
-          </div>
-
-          <div class="terminal" id="terminal-body">
-            <div id="terminal-output">
-              <div class="line-msg">Welcome to Shubham's Dev Space!</div>
-              <div class="line">
-                <span class="prompt">guest@shubham.dev:~$</span>
-                <span class="cmd">neofetch</span>
-              </div>
-              
-              <div class="neofetch-container">
-                <pre class="neofetch-logo">
+                <div class="neofetch-container">
+                  <pre class="neofetch-logo">
   /\___/\
  ( o   o )
  (  =^=  )
  (        )
  (         )
  (          ))))
-                </pre>
-                <div class="neofetch-info">
-                  <div><span class="info-label">shubham</span>@dev-space</div>
-                  <div>-------------------</div>
-                  <div><span class="info-label">OS:</span> Linux </div>
-                  <div><span class="info-label">Host:</span> Computer Engineering Undergrad '29</div>
-                  <div><span class="info-label">Kernel:</span> 6.9.1-zen-overthinking</div>
-                  <div><span class="info-label">Shell:</span> bash-static</div>
-                  <div><span class="info-label">Terminal:</span> kitty + tmux</div>
-                  <div><span class="info-label">Status:</span> drifting away, yet functional</div>
-                  <div><span class="info-label">Loops:</span> building, overthinking, repeating</div>
-                  <div><span class="info-label">Mood:</span> quietly overloaded</div>
+                </pre
+                  >
+                  <div class="neofetch-info">
+                    <div><span class="info-label">shubham</span>@dev-space</div>
+                    <div>-------------------</div>
+                    <div><span class="info-label">OS:</span> Linux</div>
+                    <div>
+                      <span class="info-label">Host:</span> Computer Engineering
+                      Undergrad '29
+                    </div>
+                    <div>
+                      <span class="info-label">Kernel:</span>
+                      6.9.1-zen-overthinking
+                    </div>
+                    <div>
+                      <span class="info-label">Shell:</span> bash-static
+                    </div>
+                    <div>
+                      <span class="info-label">Terminal:</span> kitty + tmux
+                    </div>
+                    <div>
+                      <span class="info-label">Status:</span> drifting away, yet
+                      functional
+                    </div>
+                    <div>
+                      <span class="info-label">Loops:</span> building,
+                      overthinking, repeating
+                    </div>
+                    <div>
+                      <span class="info-label">Mood:</span> quietly overloaded
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              <div class="line">
+                <span class="prompt">guest@shubham.dev:~$</span>
+                <span class="cursor"></span>
+              </div>
             </div>
+          </section>
 
-            <div class="line">
-              <span class="prompt">guest@shubham.dev:~$</span>
-              <span class="cursor"></span>
+          <!-- BIO -->
+          <section class="bio-module">
+            <h3>~$whoami</h3>
+            <div class="bio-content">
+              <p>
+                Hey, I'm <span class="highlight">Shubham</span>! I'm a Computer
+                Engineering undergraduate ('29). I spend most of my time working
+                with AI services, automation pipelines, and cloud systems that
+                don’t fall apart under pressure (at least not on purpose). Right
+                now, I'm doing a
+                <span class="highlight"
+                  >Devops and cloud automation (virtual) internship</span
+                >
+                where I work and learn with containerized microservices and
+                CI/CD workflows.
+              </p>
+              <p>
+                I’m constantly exploring random stuff on the internet including
+                cloud systems and trying to build things that feel stable,
+                scalable, secured, structured and resilient in the best way
+                possible.When I’m offline, I’m probably running on too much
+                caffeine, or rotating between anime, games, gym sessions, and
+                badminton depending on my mood that day.
+              </p>
             </div>
-
-          </div>
-
-        </section>
-
-        <!-- GITHUB -->
-        <section class="github-module">
-          <h3>Github activity</h3>
-          <div class="github-chart-container">
-            <img src="https://ghchart.rshah.org/iamclickify" alt="github contributions" />
-          </div>
-        </section>
-
-      </div>
-
-      <!-- RIGHT COLUMN (NARROW) -->
-      <div class="right-column">
-
-        <!-- RECENT UPDATES -->
-        <section class="updates-module">
-          <h3>recent updates</h3>
-          <ul class="updates-list">
-            <li>
-              <span class="update-date">Jun 20</span>
-              <span class="update-text">Redesigned portfolio layout based on mindmap grid</span>
-            </li>
-            
-            <li>
-              <span class="update-date">Jun 11</span>
-              <span class="update-text">Started with devops internship</span>
-            </li>
-            <li>
-              <span class="update-date">May 23</span>
-              <span class="update-text">Finished engineering second-semester exams!</span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- COZY GIF -->
-        <div class="cozy-gif-container">
-          <img src="konata-lucky-star.gif" alt="loading">
+          </section>
         </div>
 
-        <!-- SPOTIFY/NOW PLAYING PLACEHOLDER -->
-        <section class="spotify-module">
-          <h3>now playing</h3>
-          <div class="placeholder">SPOTIFY WIDGET</div>
-        </section>
+        <!-- RIGHT COLUMN (NARROW) -->
+        <div class="right-column">
+          <!-- RECENT UPDATES -->
+          <section class="updates-module">
+            <h3>recent updates</h3>
+            <ul class="updates-list">
+              <li>
+                <span class="update-date">Jun 20</span>
+                <span class="update-text"
+                  >Redesigned portfolio layout based on my intrusive thoughts</span
+                >
+              </li>
 
+              <li>
+                <span class="update-date">Jun 11</span>
+                <span class="update-text">Started with devops internship</span>
+              </li>
+              <li>
+                <span class="update-date">May 23</span>
+                <span class="update-text"
+                  >Finished engineering second-semester exams!</span
+                >
+              </li>
+            </ul>
+          </section>
+
+          <!-- COZY GIF -->
+          <div class="cozy-gif-container">
+            <img src="hii-hello.gif" alt="loading" />
+          </div>
+
+          <!-- NOW PLAYING -->
+          <section class="music-module">
+            <h3>now playing</h3>
+            <div class="music-player">
+              <audio id="audio-player" src="Prayer Instrumental 128KBPS.mp3" loop></audio>
+              
+              <button class="music-btn" id="play-btn" aria-label="Play/Pause">
+                <svg class="play-icon" viewBox="0 0 24 24" id="play-icon">
+                  <path d="M8 5v14l11-7z" fill="currentColor"/>
+                </svg>
+                <svg class="pause-icon hidden" viewBox="0 0 24 24" id="pause-icon">
+                  <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/>
+                </svg>
+              </button>
+
+              <div class="music-details">
+                <span class="music-title">music.mp3</span>
+                <div class="music-progress" id="progress-container">
+                  <div class="music-progress-bar" id="progress-bar"></div>
+                </div>
+              </div>
+
+              <div class="music-visualizer" id="visualizer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
+    </main>
 
-    </div>
-
-  </main>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
