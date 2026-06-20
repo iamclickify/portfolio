@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shubham | Dev Space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
   <!-- SIDEBAR -->
@@ -18,36 +20,36 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="nav-link active">~/home</a>
-      <a class="nav-link">~/projects</a>
-      <a class="nav-link">~/writing</a>
-      <a class="nav-link">~/media-log</a>
-      <a class="nav-link">~/random-stuff</a>
+      <a class="nav-link active" data-tab="home">~/home</a>
+      <a class="nav-link" data-tab="projects">~/projects</a>
+      <a class="nav-link" data-tab="writing">~/writing</a>
+      <a class="nav-link" data-tab="media-log">~/media-log</a>
+      <a class="nav-link" data-tab="random-stuff">~/random-stuff</a>
     </nav>
 
     <div class="sidebar-divider"></div>
 
     <div class="sidebar-links">
-      <a href="https://github.com/iamclickify">GitHub</a>
-      <a href="https://www.linkedin.com/">LinkedIn</a>
+      <a href="https://github.com/iamclickify" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="#">Resume</a>
     </div>
 
-    <div class="sidebar-status">
-      <p class="status-title">currently</p>
-      <p>Procrastinating at its peak</p>
+    <div class="sidebar-gif">
+      <img src="lonely-lonely-lonely.gif" alt="Lonely sticker">
     </div>
 
-  </aside>
+    
 
+  </aside>
 
   <!-- MAIN -->
   <main class="main">
 
     <div class="home-grid">
 
-      <!-- TOP ROW -->
-      <div class="top-row">
+      <!-- CENTER COLUMN (WIDE) -->
+      <div class="center-column">
 
         <!-- TERMINAL -->
         <section class="terminal-module">
@@ -59,18 +61,37 @@
             <span class="terminal-title">guest@shubham.dev:~$ session</span>
           </div>
 
-          <div class="terminal">
-
-            <div class="line">
-              <span class="prompt">guest@shubham.dev:~$</span>
-              <span class="cmd">neofetch</span>
+          <div class="terminal" id="terminal-body">
+            <div id="terminal-output">
+              <div class="line-msg">Welcome to Shubham's Dev Space!</div>
+              <div class="line">
+                <span class="prompt">guest@shubham.dev:~$</span>
+                <span class="cmd">neofetch</span>
+              </div>
+              
+              <div class="neofetch-container">
+                <pre class="neofetch-logo">
+  /\___/\
+ ( o   o )
+ (  =^=  )
+ (        )
+ (         )
+ (          ))))
+                </pre>
+                <div class="neofetch-info">
+                  <div><span class="info-label">shubham</span>@dev-space</div>
+                  <div>-------------------</div>
+                  <div><span class="info-label">OS:</span> Linux </div>
+                  <div><span class="info-label">Host:</span> Computer Engineering Undergrad '29</div>
+                  <div><span class="info-label">Kernel:</span> 6.9.1-zen-overthinking</div>
+                  <div><span class="info-label">Shell:</span> bash-static</div>
+                  <div><span class="info-label">Terminal:</span> kitty + tmux</div>
+                  <div><span class="info-label">Status:</span> drifting away, yet functional</div>
+                  <div><span class="info-label">Loops:</span> building, overthinking, repeating</div>
+                  <div><span class="info-label">Mood:</span> quietly overloaded</div>
+                </div>
+              </div>
             </div>
-
-            <div class="output">booting identity module...</div>
-
-            <div class="output"><span class="system-label ok">status:</span> drifting but functional</div>
-            <div class="output"><span class="system-label warn">loops:</span> building, overthinking, repeating</div>
-            <div class="output"><span class="system-label error">mood:</span> quietly overloaded</div>
 
             <div class="line">
               <span class="prompt">guest@shubham.dev:~$</span>
@@ -81,46 +102,56 @@
 
         </section>
 
-
-        <!-- BLOGS -->
-        <section class="blogs-module">
-          <h3>recent blogs</h3>
-
-          <div class="blog-list">
-            <a href="#">RAG systems explained</a>
-            <a href="#">Building UniVault</a>
-            <a href="#">AWS notes</a>
+        <!-- GITHUB -->
+        <section class="github-module">
+          <h3>Github activity</h3>
+          <div class="github-chart-container">
+            <img src="https://ghchart.rshah.org/iamclickify" alt="github contributions" />
           </div>
         </section>
 
       </div>
 
+      <!-- RIGHT COLUMN (NARROW) -->
+      <div class="right-column">
 
-      <!-- GITHUB -->
-      <section class="github-module">
-        <h3>github activity</h3>
-        <img src="https://ghchart.rshah.org/iamclickify" />
-      </section>
+        <!-- RECENT UPDATES -->
+        <section class="updates-module">
+          <h3>recent updates</h3>
+          <ul class="updates-list">
+            <li>
+              <span class="update-date">Jun 20</span>
+              <span class="update-text">Redesigned portfolio layout based on mindmap grid</span>
+            </li>
+            
+            <li>
+              <span class="update-date">Jun 11</span>
+              <span class="update-text">Started with devops internship</span>
+            </li>
+            <li>
+              <span class="update-date">May 23</span>
+              <span class="update-text">Finished engineering second-semester exams!</span>
+            </li>
+          </ul>
+        </section>
 
-
-      <!-- EXTRAS -->
-      <section class="extras-module">
-
-        <div>
-          <h3>Anime</h3>
-          <div class="placeholder">GIF HERE</div>
+        <!-- COZY GIF -->
+        <div class="cozy-gif-container">
+          <img src="konata-lucky-star.gif" alt="loading">
         </div>
 
-        <div>
-          <h3>Now Playing</h3>
-          <div class="placeholder">Spotify Widget</div>
-        </div>
+        <!-- SPOTIFY/NOW PLAYING PLACEHOLDER -->
+        <section class="spotify-module">
+          <h3>now playing</h3>
+          <div class="placeholder">SPOTIFY WIDGET</div>
+        </section>
 
-      </section>
+      </div>
 
     </div>
 
   </main>
 
+  <script src="script.js"></script>
 </body>
 </html>
