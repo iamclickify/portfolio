@@ -18,7 +18,7 @@
 /* LAYOUT ROOT */
 body {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   font-family: "JetBrains Mono", monospace;
   background: var(--bg);
   color: var(--text);
@@ -332,7 +332,7 @@ body {
 }
 
 .cozy-gif-container img {
-  width: 100%;
+  width: 75%;
   height: auto;
   border-radius: 8px;
   display: block;
@@ -455,6 +455,7 @@ body {
 @media (max-width: 768px) {
   body {
     flex-direction: column;
+    height: auto;
     overflow-y: auto;
   }
   .sidebar {
@@ -469,4 +470,49 @@ body {
   .main {
     padding: 20px;
   }
+}
+
+/* SKILLS MODULE */
+.skills-module h3 {
+  color: var(--accent);
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  text-transform: lowercase;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.skills-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skills-group-title {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.skill-badge {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.skill-badge:not(:last-child)::after {
+  content: ",";
+  color: var(--text-muted);
 }
