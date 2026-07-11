@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -22,10 +22,21 @@
 
       <nav class="sidebar-nav">
         <a class="nav-link active" href="index.html" data-tab="home">~/home</a>
-        <a class="nav-link" href="pages/projects.html" data-tab="projects">~/projects</a>
-        <a class="nav-link" href="pages/writing.html" data-tab="writing">~/writing</a>
-        <a class="nav-link" href="pages/media-log.html" data-tab="media-log">~/media-log</a>
-        <a class="nav-link" href="pages/random-stuff.html" data-tab="random-stuff">~/random-stuff</a>
+        <a class="nav-link" href="pages/projects.html" data-tab="projects"
+          >~/projects</a
+        >
+        <a class="nav-link" href="pages/writing.html" data-tab="writing"
+          >~/writing</a
+        >
+        <a class="nav-link" href="pages/media-log.html" data-tab="media-log"
+          >~/media-log</a
+        >
+        <a
+          class="nav-link"
+          href="pages/random-stuff.html"
+          data-tab="random-stuff"
+          >~/random-stuff</a
+        >
       </nav>
 
       <div class="sidebar-divider"></div>
@@ -40,7 +51,7 @@
           rel="noopener"
           >LinkedIn</a
         >
-        <a href="#">Resume</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
       </div>
 
       <div class="sidebar-gif">
@@ -126,20 +137,17 @@
             <div class="bio-content">
               <p>
                 Hey, I'm <span class="highlight">Shubham</span>! I'm a Computer
-                Engineering undergraduate ('29). interested in cloud
-                infrastructure, automation, and developer tooling. Currently
+                Engineering undergraduate ('29). I am pretty much interested in cloud
+                infrastructure, AI, and tinkering with random technologies. Currently
                 now, I'm doing a
                 <span class="highlight"
-                  >Devops and cloud automation (virtual) internship</span
+                  >Devops and cloud automation (virtual) internship.</span
                 >
-                where I work and learn with containerized microservices and
-                CI/CD workflows.
               </p>
               <p>
-                When I'm not working on infrastructure, you'll
-                probably find me experimenting with new technologies,
-                contributing to personal projects, or at the gym or badminton
-                court, gaming or watching some anime.
+                I love to experiment with new technologies, contributing to
+                personal projects, or at the gym or badminton court, gaming or
+                watching some anime.
               </p>
             </div>
           </section>
@@ -148,15 +156,6 @@
           <section class="skills-module">
             <h3>~$skills</h3>
             <div class="skills-content">
-              <div class="skills-group">
-                <span class="skills-group-title">devops:</span>
-                <div class="skills-list">
-                  <span class="skill-badge">Docker</span>
-                  <span class="skill-badge">Github Actions</span>
-                  <span class="skill-badge">Containerization</span>
-                  <span class="skill-badge">Cloud automation</span>
-                </div>
-              </div>
               <div class="skills-group">
                 <span class="skills-group-title">languages:</span>
                 <div class="skills-list">
@@ -170,84 +169,9 @@
                 <div class="skills-list">
                   <span class="skill-badge">Linux</span>
                   <span class="skill-badge">Git & GitHub</span>
-                  <span class="skill-badge">Azure</span>
+                  <span class="skill-badge">Docker</span>
                   <span class="skill-badge">AWS</span>
                 </div>
-              </div>
-            </div>
-          </section>
-        </div>
-
-        <!-- RIGHT COLUMN (NARROW) -->
-        <div class="right-column">
-          <!-- RECENT UPDATES -->
-          <section class="updates-module">
-            <h3>recent updates</h3>
-            <ul class="updates-list">
-              <li>
-                <span class="update-date">Jun 20</span>
-                <span class="update-text"
-                  >Redesigned portfolio layout based on my intrusive
-                  thoughts</span
-                >
-              </li>
-
-              <li>
-                <span class="update-date">Jun 11</span>
-                <span class="update-text">Started with devops internship</span>
-              </li>
-              <li>
-                <span class="update-date">May 23</span>
-                <span class="update-text"
-                  >Finished engineering second-semester exams!</span
-                >
-              </li>
-            </ul>
-          </section>
-
-          <!-- COZY GIF -->
-          <div class="cozy-gif-container">
-            <img src="assets/hii-hello.gif" alt="loading" />
-          </div>
-
-          <!-- NOW PLAYING -->
-          <section class="music-module">
-            <h3>now playing</h3>
-            <div class="music-player">
-              <audio
-                id="audio-player"
-                src="assets/Prayer Instrumental 128KBPS.mp3"
-                loop
-              ></audio>
-
-              <button class="music-btn" id="play-btn" aria-label="Play/Pause">
-                <svg class="play-icon" viewBox="0 0 24 24" id="play-icon">
-                  <path d="M8 5v14l11-7z" fill="currentColor" />
-                </svg>
-                <svg
-                  class="pause-icon hidden"
-                  viewBox="0 0 24 24"
-                  id="pause-icon"
-                >
-                  <path
-                    d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
-
-              <div class="music-details">
-                <span class="music-title">music.mp3</span>
-                <div class="music-progress" id="progress-container">
-                  <div class="music-progress-bar" id="progress-bar"></div>
-                </div>
-              </div>
-
-              <div class="music-visualizer" id="visualizer">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
               </div>
             </div>
           </section>
