@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Building the Future of Cloud Infrastructure",
+    "slug": "cloud-infrastructure",
+    "date": "July 2026",
+    "readTime": "8 min read",
+    "description": "An in-depth look into modern decentralized data centers, edge computing optimization strategies, and standardizing high-throughput low-latency systems.",
+    "coverImage": "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=800&auto=format&fit=crop",
+    "tags": ["Cloud", "Infrastructure", "Data Centers"],
+    "publishedIn": "PRISM Magazine",
+    "originalMagazineUrl": "https://example.com/prism-magazine",
+    "pdfUrl": "https://example.com/cloud-infrastructure.pdf",
+    "content": "../posts/cloud-infrastructure.md"
+  }
+]
