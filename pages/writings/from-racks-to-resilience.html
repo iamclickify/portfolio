@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From Racks to Resilience: How Data Centers Power the Cloud? | Shubham</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/writing.css" />
+  </head>
+  <body>
+    <!-- STICKY PROGRESS BAR -->
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Shubham Teredesai</h2>
+        <p>Computer engineering undergrad '29</p>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="nav-link" href="../../index.html" data-tab="home">~/home</a>
+        <a class="nav-link" href="../projects.html" data-tab="projects">~/projects</a>
+        <a class="nav-link active" href="writing.html" data-tab="writing">~/writing</a>
+        <a class="nav-link" href="../media-log.html" data-tab="media-log">~/media-log</a>
+        <a class="nav-link" href="../random-stuff.html" data-tab="random-stuff">~/random-stuff</a>
+      </nav>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-links">
+        <a href="https://github.com/iamclickify" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/shubham-teredesai/"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+        <a href="../../assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+
+      <div class="sidebar-gif">
+        <img src="../../assets/lonely-lonely-lonely.gif" alt="Lonely sticker" />
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <div class="article-detail-container">
+        <!-- Main Content Column -->
+        <article class="article-detail-main">
+          <a href="writing.html" class="back-link">← Back to Writing</a>
+          
+          <div class="detail-header">
+            <span class="badge pub-badge" style="margin-bottom: 12px;">Co-Authored with Rutuparna | Published in PRISM Magazine @MMCOE</span>
+            <h1>From Racks to Resilience: How Data Centers Power the Cloud?</h1>
+            <div class="detail-meta-row">
+              <div class="detail-meta-text">
+                <div>March 2026 &nbsp;•&nbsp; 4 min read</div>
+              </div>
+              <div class="article-tags">
+                <span class="tag">Distributed Systems</span>
+                <span class="tag">Fault Tolerance</span>
+                <span class="tag">Cloud Infrastructure</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cover Image -->
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop" alt="Cloud Infrastructure Illustration" class="article-cover" />
+
+          <!-- Rendered Article Body -->
+          <div class="article-content">
+            <h2 id="distributed-systems">Distributed Systems</h2>
+            <p>Imagine millions of individuals watching the IPL Final all at once via their mobile devices, laptops, and smart televisions. Despite the heavy traffic, there would be no problem viewing since the system is distributed. Distributed systems are networks of multiple independent computers, called nodes, where data, workloads and resources are shared among the nodes to create a unified system. Tasks are not performed on a single computer but are distributed across thousands of machines via servers. The system enables better performance and reliability and even helps scale cloud computing to millions of users.</p>
+            
+            <hr />
+
+            <h2 id="cap-theorem">CAP Theorem</h2>
+            <p>This issue comes from the CAP Theorem, a fundamental principle in distributed computing. The theorem says a system can’t have consistency, availability, and partition tolerance all at once. Consistency means users always see the newest data. Availability ensures the system keeps handling client requests. Partition tolerance ensures the system works fine even without server communication.</p>
+            
+            <p>In the case of an IPL match, when there is an inability to communicate across servers, engineers have to choose whether availability takes precedence over consistency.</p>
+            
+            <p>The more cloud infrastructures expand, the more evident another fact becomes – that failure is no longer an exception; it is an expected scenario. Hard drives crash, servers heat up, connections are broken by cables, and sometimes power supplies malfunction. And yet, the cricket stream goes on seamlessly. This kind of reliability is due to fault tolerance, arguably one of the key concepts of resilient cloud infrastructures. In order to deliver millions of users to watch the IPL finals, multiple fault tolerance strategies come into play.</p>
+
+            <figure>
+              <img src="../../assets/Picture1.png" alt="CAP Theorem and Network Communication Illustration" style="background: white; padding: 10px;" />
+              <figcaption>Figure 1: Visual illustration of network communication and architectural flows.</figcaption>
+            </figure>
+
+            <hr />
+
+            <h2 id="fault-tolerance">Fault Tolerance</h2>
+            <p>The concept of fault tolerance does not comprise a certain piece of technology or software. It represents a method based on the premise that faults are bound to happen. Instead of designing cloud computing systems to ensure the absence of any faults, designers create systems that can diagnose the faults, isolate the faulty component, and continue working with limited interference.</p>
+            
+            <p>
+              1) <strong>Redundancy</strong> – It comprises making multiple replicas of the components needed, which include servers, storage systems, power sources, and networking services. In an IPL final, multiple servers carry out the same task simultaneously. Once a server breaks down, another takes charge instantly, allowing the viewing process to be seamless.<br /><br />
+              2) <strong>Replication</strong> – It comprises replicating data on several servers and other places, thus improving availability and minimizing chances of losing data. In an IPL event, all videos that come alive and the information held by users are replicated in data centers. In case a storage center fails, the other continues serving users.<br /><br />
+              3) <strong>Failover</strong> – It involves shifting operations to a working replica of a system once the latter stops functioning. Should a cluster of servers used for viewers fail while playing IPL, the failover will redirect the operation to another cluster of servers, hence the process continues smoothly.<br /><br />
+              4) <strong>Load Balancing</strong> – It is the distribution of loads of incoming operations among several servers to increase efficiency. During the last overs of an IPL match, there may be millions of viewers who connect to the website at once. Load balancing allows traffic management among several servers.<br /><br />
+              5) <strong>Geographic Distribution</strong> – It spans cloud infrastructure across various regions and data centers. If an outage hits a facility in one city, traffic gets rerouted to other locations. This way, viewers can keep watching IPL matches without interruptions.
+            </p>
+
+            <figure>
+              <img src="../../assets/Picture2.png" alt="Fault Tolerance Architecture" style="background: white; padding: 10px;" />
+              <figcaption>Figure 2: Architectural breakdown of fault tolerance mechanisms.</figcaption>
+            </figure>
+
+            <hr />
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p>In the end, the cloud is not floating somewhere in the sky. It lives inside steel racks, beneath cooling ducts, behind fiber cables, and within facilities engineered to survive disruption at massive scale. From racks to resilience, modern data centers have become the silent machines powering the digital civilization of the 21st century.</p>
+
+            <hr />
+
+            <h2 id="citations">Citations</h2>
+            <p>
+              • “Design for failure.” – Netflix cloud engineering principle.<br />
+              <a href="https://about.netflix.com/en/news/completing-the-netflix-cloud-migration" target="_blank" rel="noopener">https://about.netflix.com/en/news/completing-the-netflix-cloud-migration</a><br /><br />
+              • “Everything fails, all the time.” — Werner Vogels
+            </p>
+          </div>
+
+          <!-- Bottom Footer Navigation & Buttons -->
+          <footer class="article-footer">
+            <p class="article-footer-note">Originally published in PRISM Magazine.</p>
+            <div class="article-footer-buttons">
+              <a href="https://mmcoe.edu.in/e-magzine/" target="_blank" class="btn-prism">Read Original Magazine</a>
+            </div>
+            <a href="writing.html" class="back-link">← Back to Writing</a>
+          </footer>
+        </article>
+
+        <!-- Table of Contents Sidebar -->
+        <aside class="toc-sidebar">
+          <div class="toc-title">Table of Contents</div>
+          <ul class="toc-list" id="toc-list">
+            <li class="toc-item h2"><a href="#distributed-systems">Distributed Systems</a></li>
+            <li class="toc-item h2"><a href="#cap-theorem">CAP Theorem</a></li>
+            <li class="toc-item h2"><a href="#fault-tolerance">Fault Tolerance</a></li>
+            <li class="toc-item h2"><a href="#conclusion">Conclusion</a></li>
+            <li class="toc-item h2"><a href="#citations">Citations</a></li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+
+    <script src="../../js/script.js"></script>
+    <script src="../../js/writing.js"></script>
+  </body>
+</html>
