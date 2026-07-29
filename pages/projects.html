@@ -11,6 +11,33 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .project-card {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--border-color);
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-decoration: none;
+        transition: background 0.2s ease, border-color 0.2s ease;
+        cursor: pointer;
+      }
+      .project-card:hover {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: var(--accent);
+      }
+      .project-card h2 {
+        margin: 0;
+        font-size: 1.25rem;
+        font-family: 'JetBrains Mono', monospace;
+        color: var(--accent);
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+    </style>
   </head>
   <body>
     <!-- SIDEBAR -->
@@ -50,7 +77,7 @@
 
     <!-- MAIN -->
     <main class="main">
-      <div style="max-width: 800px; margin: 40px auto;">
+      <div style="max-width: 800px; margin: 0 auto;">
         <section class="terminal-module">
           <div class="terminal-header">
             <span class="dot red"></span>
@@ -59,10 +86,68 @@
             <span class="terminal-title">guest@shubham.dev:~$ cd projects</span>
           </div>
 
-          <div class="terminal" style="height: auto; min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 16px;">
-            <div style="font-size: 3rem;"></div>
-            <h1 style="color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 1.8rem; margin: 0;">~/projects</h1>
-            <p style="color: var(--text-muted); font-size: 1rem; margin: 0;">Coming soon...</p>
+          <div class="terminal" style="height: auto; min-height: 320px; display: flex; flex-direction: column; gap: 20px; padding: 24px;">
+            <div style="border-bottom: 1px dashed var(--border-color); padding-bottom: 12px; margin-bottom: 8px;">
+              <h1 style="color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 1.5rem; margin: 0;">~/projects</h1>
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px; font-family: 'JetBrains Mono', monospace;">My personal projects and codebases.</p>
+            </div>
+            
+            <!-- Project 1 -->
+            <a href="https://github.com/iamclickify/WeebWorld" target="_blank" rel="noopener" class="project-card">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px;">
+                <h2>
+                  WeebWorld
+                  <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: normal;">→</span>
+                </h2>
+              </div>
+              
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin: 0; font-family: 'JetBrains Mono', monospace; font-style: italic;">
+                A simple and clean website to track the latest anime episode and movie releases.
+              </p>
+              
+              <ul style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0; padding-left: 20px; font-family: 'JetBrains Mono', monospace;">
+                <li>Displays real-time latest episode and movie releases with live updates using public api.</li>
+                <li>Features a modern, responsive, and mobile-friendly UI layout.</li>
+                <li>Configured for automated deployments and hosting on Vercel.</li>
+              </ul>
+
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; align-items: center;">
+                <span style="color: var(--text-muted); font-size: 0.8rem; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: 0.5px; margin-right: 4px;">Tech Stack:</span>
+                <span style="font-size: 0.75rem; background: rgba(136, 192, 208, 0.15); color: var(--accent); padding: 3px 8px; border-radius: 4px; font-family: 'JetBrains Mono', monospace;">HTML</span>
+                <span style="font-size: 0.75rem; background: rgba(136, 192, 208, 0.15); color: var(--accent); padding: 3px 8px; border-radius: 4px; font-family: 'JetBrains Mono', monospace;">Tailwind CSS</span>
+                <span style="font-size: 0.75rem; background: rgba(136, 192, 208, 0.15); color: var(--accent); padding: 3px 8px; border-radius: 4px; font-family: 'JetBrains Mono', monospace;">JavaScript</span>
+                <span style="font-size: 0.75rem; background: rgba(136, 192, 208, 0.15); color: var(--accent); padding: 3px 8px; border-radius: 4px; font-family: 'JetBrains Mono', monospace;">Vercel</span>
+              </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="https://github.com/iamclickify/InfraTech" target="_blank" rel="noopener" class="project-card">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px;">
+                <h2>
+                  InfraTech
+                  <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: normal;">→</span>
+                </h2>
+              </div>
+              
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin: 0; font-family: 'JetBrains Mono', monospace; font-style: italic;">
+                A containerized, production-ready system monitoring platform.
+              </p>
+              
+              <ul style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0; padding-left: 20px; font-family: 'JetBrains Mono', monospace;">
+                <li>Remotely monitors Linux VMs at regular intervals using SSH (via Paramiko).</li>
+                <li>Gathers telemetry logs including CPU, RAM, Disk usage, and Uptime status.</li>
+                <li>Engineered using a secure 3-tier architecture with Docker Compose containers.</li>
+              </ul>
+
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; align-items: center;">
+                <span style="color: var(--text-muted); font-size: 0.8rem; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: 0.5px; margin-right: 4px;">Tech Stack:</span>
+                <span style="font-size: 0.75rem; background: rgba(136, 192, 208, 0.15); color: var(--accent); padding: 3px 8px; border-radius: 4px; font-family: 'JetBrains Mono', monospace;">Python</span>
+                <span style="font-size: 0.75rem; background: rgba(136, 192, 208, 0.15); color: var(--accent); padding: 3px 8px; border-radius: 4px; font-family: 'JetBrains Mono', monospace;">Django</span>
+                <span style="font-size: 0.75rem; background: rgba(136, 192, 208, 0.15); color: var(--accent); padding: 3px 8px; border-radius: 4px; font-family: 'JetBrains Mono', monospace;">Docker</span>
+                <span style="font-size: 0.75rem; background: rgba(136, 192, 208, 0.15); color: var(--accent); padding: 3px 8px; border-radius: 4px; font-family: 'JetBrains Mono', monospace;">Nginx</span>
+                <span style="font-size: 0.75rem; background: rgba(136, 192, 208, 0.15); color: var(--accent); padding: 3px 8px; border-radius: 4px; font-family: 'JetBrains Mono', monospace;">MySQL</span>
+              </div>
+            </a>
           </div>
         </section>
       </div>
