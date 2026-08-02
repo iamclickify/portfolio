@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Grand Theft Auto V",
+    "platform": "PC / PlayStation",
+    "status": "Completed",
+    "memory": "The chaotic heist planning and the massive, living sandbox of Los Santos define modern sandbox gaming.",
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg",
+    "dateAdded": "2026-06-05"
+  },
+  {
+    "title": "The Witcher 3: Wild Hunt",
+    "platform": "PC",
+    "status": "Completed",
+    "memory": "The world-building and morally grey choices made exploration feel genuinely rewarding and impactful.",
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/292030/header.jpg",
+    "dateAdded": "2026-07-20"
+  },
+  {
+    "title": "Euro Truck Simulator 2",
+    "platform": "PC",
+    "status": "Playing",
+    "memory": "Cruising down European highways at night with the radio playing is the ultimate way to unwind after long coding sessions.",
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/227300/header.jpg",
+    "dateAdded": "2026-08-02"
+  }
+]

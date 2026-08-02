@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Media Log | Shubham</title>
+    <title>Clickify | Personal Log</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,6 +11,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media-log.css" />
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
     <!-- SIDEBAR -->
@@ -22,10 +25,18 @@
 
       <nav class="sidebar-nav">
         <a class="nav-link" href="../index.html" data-tab="home">~/home</a>
-        <a class="nav-link" href="projects.html" data-tab="projects">~/projects</a>
-        <a class="nav-link" href="writings/writing.html" data-tab="writing">~/writing</a>
-        <a class="nav-link active" href="media-log.html" data-tab="media-log">~/media-log</a>
-        <a class="nav-link" href="random-stuff.html" data-tab="random-stuff">~/random-stuff</a>
+        <a class="nav-link" href="projects.html" data-tab="projects"
+          >~/projects</a
+        >
+        <a class="nav-link" href="writings/writing.html" data-tab="writing"
+          >~/writing</a
+        >
+        <a class="nav-link active" href="media-log.html" data-tab="media-log"
+          >~/media-log</a
+        >
+        <a class="nav-link" href="random-stuff.html" data-tab="random-stuff"
+          >~/random-stuff</a
+        >
       </nav>
 
       <div class="sidebar-divider"></div>
@@ -50,24 +61,134 @@
 
     <!-- MAIN -->
     <main class="main">
-      <div style="max-width: 800px; margin: 40px auto;">
+      <div style="max-width: 800px; margin: 40px auto">
         <section class="terminal-module">
           <div class="terminal-header">
             <span class="dot red"></span>
             <span class="dot yellow"></span>
             <span class="dot green"></span>
-            <span class="terminal-title">guest@shubham.dev:~$ cd media-log</span>
+            <span class="terminal-title"
+              >guest@shubham.dev:~$ cd media-log</span
+            >
           </div>
 
-          <div class="terminal" style="height: auto; min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 16px;">
-            <div style="font-size: 3rem;"></div>
-            <h1 style="color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 1.8rem; margin: 0;">~/media-log</h1>
-            <p style="color: var(--text-muted); font-size: 1rem; margin: 0;">Coming soon...</p>
+          <div
+            class="terminal"
+            style="
+              height: auto;
+              min-height: 320px;
+              display: flex;
+              flex-direction: column;
+              gap: 32px;
+              padding: 24px;
+            "
+          >
+            <!-- Header -->
+            <div
+              style="
+                border-bottom: 1px dashed var(--border-color);
+                padding-bottom: 16px;
+                margin-bottom: 8px;
+              "
+            >
+              <h1
+                style="
+                  color: var(--accent);
+                  font-family: &quot;JetBrains Mono&quot;, monospace;
+                  font-weight: 500;
+                  font-size: 1.5rem;
+                  margin: 0;
+                "
+              >
+                ~/media-log
+              </h1>
+              <p
+                style="
+                  color: var(--text-muted);
+                  font-size: 0.9rem;
+                  margin-top: 4px;
+                  font-family: &quot;JetBrains Mono&quot;, monospace;
+                  line-height: 1.6;
+                "
+              >
+                A curated collection of things I've enjoyed and experiences that
+                shaped my journey beyond programming.
+              </p>
+            </div>
+
+            <!-- Anime Section -->
+            <section
+              class="section-container fade-in-section"
+              style="margin-bottom: 0"
+            >
+              <h2 class="section-title">Anime</h2>
+              <div id="anime-list" class="list-layout">
+                <!-- Dynamically populated -->
+              </div>
+            </section>
+
+            <!-- Books Section -->
+            <section
+              class="section-container fade-in-section"
+              style="margin-bottom: 0"
+            >
+              <h2 class="section-title">Books</h2>
+              <p
+                style="
+                  color: var(--text-muted);
+                  font-size: 0.95rem;
+                  font-family: &quot;JetBrains Mono&quot;, monospace;
+                  line-height: 1.6;
+                  font-style: italic;
+                  border-left: 2px solid var(--accent);
+                  padding-left: 14px;
+                  margin: 0;
+                "
+              >
+                trying to understand Fyodor Dostoevsky and Franz Kafka's
+                literature.
+              </p>
+            </section>
+
+            <!-- Currently Exploring -->
+            <section
+              class="section-container fade-in-section"
+              style="margin-bottom: 0"
+            >
+              <h2 class="section-title">Currently Exploring</h2>
+              <p
+                style="
+                  color: var(--text-muted);
+                  font-size: 0.95rem;
+                  font-family: &quot;JetBrains Mono&quot;, monospace;
+                  line-height: 1.6;
+                  font-style: italic;
+                  border-left: 2px solid var(--accent);
+                  padding-left: 14px;
+                  margin: 0;
+                "
+              >
+                Cloud computing - Just cause i want to escape from the AIML, Web
+                dev, DSA rat race. 
+                <br><br>
+                Data Structures and Algorithms - I have this for 3 credits in my second year. 
+                This is a core subject for CS. It is the foundation for Leetcode, codechef or competitive
+                programming grind. This is also required for GATE exam, so no
+                matter how much i hate it i still need to study it :/
+                <br><br>
+                OOPS - Another core subject, required for GATE. Gotta study it for the marks.
+                <br></br>
+                AI - Very enthusiastic domain for me, kind of sad how people have converted it into a rat race. The way i use chatgpt and claude is just too much compared to an avg person.
+            
+              </p>
+            </section>
           </div>
         </section>
       </div>
     </main>
 
+    <!-- Scripts -->
     <script src="../js/script.js"></script>
+    <script src="../js/media-log.js?v=1.4"></script>
   </body>
 </html>

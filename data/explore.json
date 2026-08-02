@@ -1,0 +1,22 @@
+[
+  {
+    "topic": "Cloud Computing",
+    "description": "Learning scalable serverless architectures, storage layers, and infrastructure management.",
+    "icon": "cloud"
+  },
+  {
+    "topic": "Data Structures & Algorithms",
+    "description": "Mastering search/sort behaviors, hash maps, complex tree nodes, and graph traversals.",
+    "icon": "binary"
+  },
+  {
+    "topic": "Artificial Intelligence",
+    "description": "Exploring foundational models, neural networks, and prompt engineering paradigms.",
+    "icon": "cpu"
+  },
+  {
+    "topic": "Object Oriented Programming",
+    "description": "Studying design patterns, polymorphism, inheritance hierarchies, and solid principles.",
+    "icon": "code-2"
+  }
+]

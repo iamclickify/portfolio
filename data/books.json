@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "status": "Completed",
+    "reflection": "An incredibly practical breakdown of how small, 1% improvements compound over time to create massive shifts.",
+    "cover": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=600&auto=format&fit=crop",
+    "dateAdded": "2026-05-12"
+  },
+  {
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "status": "Reading",
+    "reflection": "A brilliant deep-dive into the trade-offs of storage engines, replication, and distributed systems architecture.",
+    "cover": "https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=600&auto=format&fit=crop",
+    "dateAdded": "2026-07-28"
+  }
+]
